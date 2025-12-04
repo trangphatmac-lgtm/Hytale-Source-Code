@@ -1,0 +1,8 @@
+namespace Epic.OnlineServices.Lobby;
+
+public struct AddNotifyRTCRoomConnectionChangedOptions
+{
+	internal Utf8String LobbyId_DEPRECATED { get; set; }
+
+	internal ProductUserId LocalUserId_DEPRECATED { get; set; }
+}

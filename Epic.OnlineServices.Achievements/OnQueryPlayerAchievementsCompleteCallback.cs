@@ -1,0 +1,3 @@
+namespace Epic.OnlineServices.Achievements;
+
+public delegate void OnQueryPlayerAchievementsCompleteCallback(ref OnQueryPlayerAchievementsCompleteCallbackInfo data);

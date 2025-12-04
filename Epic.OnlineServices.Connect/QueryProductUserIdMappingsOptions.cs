@@ -1,0 +1,10 @@
+namespace Epic.OnlineServices.Connect;
+
+public struct QueryProductUserIdMappingsOptions
+{
+	public ProductUserId LocalUserId { get; set; }
+
+	internal ExternalAccountType AccountIdType_DEPRECATED { get; set; }
+
+	public ProductUserId[] ProductUserIds { get; set; }
+}

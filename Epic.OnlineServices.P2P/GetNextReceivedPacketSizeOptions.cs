@@ -1,0 +1,35 @@
+namespace Epic.OnlineServices.P2P;
+
+public struct GetNextReceivedPacketSizeOptions
+{
+	internal byte[] m_RequestedChannel;
+
+	public ProductUserId LocalUserId { get; set; }
+
+	public byte? RequestedChannel
+	{
+		get
+		{
+			if (m_RequestedChannel == null)
+			{
+				return null;
+			}
+			return m_RequestedChannel[0];
+		}
+		set
+		{
+			if (value.HasValue)
+			{
+				if (m_RequestedChannel == null)
+				{
+					m_RequestedChannel = new byte[1];
+				}
+				m_RequestedChannel[0] = value.Value;
+			}
+			else
+			{
+				m_RequestedChannel = null;
+			}
+		}
+	}
+}

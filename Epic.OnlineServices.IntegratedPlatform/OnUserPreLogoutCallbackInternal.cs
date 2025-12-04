@@ -1,0 +1,6 @@
+using System.Runtime.InteropServices;
+
+namespace Epic.OnlineServices.IntegratedPlatform;
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+internal delegate IntegratedPlatformPreLogoutAction OnUserPreLogoutCallbackInternal(ref UserPreLogoutCallbackInfoInternal data);

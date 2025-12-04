@@ -1,0 +1,240 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>HytaleClient</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="HytaleClient.Graphics.Shaders.BasicFogFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BasicFogVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BasicFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BasicVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Batcher2DFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Batcher2DVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BlockyModelFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BlockyModelVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BloomCompositeFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BloomDownsampleBlurFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BloomSelectFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BloomUpsampleBlurFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.BlurFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.CloudsFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.CubemapFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.CubemapVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.CurveType_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DebugDrawMapFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DebugHeatGradient_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DeferredFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DeferredShadowFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Deferred_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DepthOfFieldAdvancedFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DepthOfField_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Distortion_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Dithering_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DoFBlurFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DoFCircleOfConfusionFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DoFDownsampleFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DoFFillFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DoFNearCoCBlurFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.DummyVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.EdgeDetectionFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Fallback_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Fog_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ForceFieldFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.FXAA_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.FX_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.HiZBuildFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.HiZBuildGS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.HiZCullVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.HiZFillHoleFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.HiZReprojectVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LightClusteredFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LightCluster_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LightFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LightMixFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LightVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Light_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.LinearZFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.MapChunkFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.MapChunkVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.MaxFilterFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ModelVFX_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.MomentsOIT_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Noise_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.OITCompositeFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.OIT_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ParticleFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ParticleVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.PostEffectFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Quaternion_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.RadialGlowLuminanceFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.RadialGlowLuminanceVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.RadialGlowMaskFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.RadialGlowMaskVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Random_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Reconstruction_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Sampling_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SceneBrightnessPackVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SceneData_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ScreenVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.Shading_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ShadowMap_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SkyAndCloudsVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SkyFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SSAOFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.SunOcclusionDownsampleFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.TemporalAAFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.TextFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.TextVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.VertexCompression_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.VolumetricSunshaftFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.WBOIT_inc.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.WorldMapFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZDownsampleFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZDownsampleGS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyChunkFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyChunkPlanesVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyChunkVS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyFS.glsl" />
+    <None Remove="HytaleClient.Graphics.Shaders.ZOnlyVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BasicFogFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BasicFogFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BasicFogVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BasicFogVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BasicFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BasicFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BasicVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BasicVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Batcher2DFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.Batcher2DFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Batcher2DVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.Batcher2DVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BlockyModelFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BlockyModelFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BlockyModelVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BlockyModelVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BloomCompositeFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BloomCompositeFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BloomDownsampleBlurFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BloomDownsampleBlurFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BloomSelectFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BloomSelectFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BloomUpsampleBlurFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BloomUpsampleBlurFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.BlurFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.BlurFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.CloudsFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.CloudsFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.CubemapFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.CubemapFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.CubemapVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.CubemapVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.CurveType_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.CurveType_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DebugDrawMapFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DebugDrawMapFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DebugHeatGradient_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.DebugHeatGradient_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DeferredFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DeferredFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DeferredShadowFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DeferredShadowFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Deferred_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Deferred_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DepthOfFieldAdvancedFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DepthOfFieldAdvancedFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DepthOfField_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.DepthOfField_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Distortion_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Distortion_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Dithering_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Dithering_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DoFBlurFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DoFBlurFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DoFCircleOfConfusionFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DoFCircleOfConfusionFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DoFDownsampleFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DoFDownsampleFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DoFFillFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DoFFillFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DoFNearCoCBlurFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DoFNearCoCBlurFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.DummyVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.DummyVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.EdgeDetectionFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.EdgeDetectionFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Fallback_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Fallback_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Fog_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Fog_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ForceFieldFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ForceFieldFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.FXAA_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.FXAA_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.FX_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.FX_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.HiZBuildFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.HiZBuildFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.HiZBuildGS.glsl" LogicalName="HytaleClient.Graphics.Shaders.HiZBuildGS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.HiZCullVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.HiZCullVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.HiZFillHoleFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.HiZFillHoleFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.HiZReprojectVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.HiZReprojectVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LightClusteredFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.LightClusteredFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LightCluster_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.LightCluster_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LightFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.LightFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LightMixFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.LightMixFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LightVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.LightVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Light_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Light_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.LinearZFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.LinearZFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.MapChunkFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.MapChunkFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.MapChunkVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.MapChunkVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.MaxFilterFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.MaxFilterFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ModelVFX_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.ModelVFX_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.MomentsOIT_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.MomentsOIT_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Noise_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Noise_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.OITCompositeFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.OITCompositeFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.OIT_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.OIT_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ParticleFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ParticleFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ParticleVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ParticleVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.PostEffectFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.PostEffectFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Quaternion_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Quaternion_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.RadialGlowLuminanceFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.RadialGlowLuminanceFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.RadialGlowLuminanceVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.RadialGlowLuminanceVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.RadialGlowMaskFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.RadialGlowMaskFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.RadialGlowMaskVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.RadialGlowMaskVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Random_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Random_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Reconstruction_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Reconstruction_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Sampling_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Sampling_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SceneBrightnessPackVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.SceneBrightnessPackVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SceneData_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.SceneData_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ScreenVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ScreenVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.Shading_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.Shading_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ShadowMap_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.ShadowMap_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SkyAndCloudsVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.SkyAndCloudsVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SkyFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.SkyFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SSAOFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.SSAOFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.SunOcclusionDownsampleFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.SunOcclusionDownsampleFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.TemporalAAFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.TemporalAAFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.TextFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.TextFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.TextVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.TextVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.VertexCompression_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.VertexCompression_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.VolumetricSunshaftFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.VolumetricSunshaftFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.WBOIT_inc.glsl" LogicalName="HytaleClient.Graphics.Shaders.WBOIT_inc.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.WorldMapFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.WorldMapFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZDownsampleFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZDownsampleFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZDownsampleGS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZDownsampleGS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyBlockyModelVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyChunkFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyChunkFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyChunkPlanesVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyChunkPlanesVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyChunkVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyChunkVS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyFS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyFS.glsl" />
+    <EmbeddedResource Include="HytaleClient.Graphics.Shaders.ZOnlyVS.glsl" LogicalName="HytaleClient.Graphics.Shaders.ZOnlyVS.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NLog" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Newtonsoft.Json.Bson" />
+    <Reference Include="HytaleProtocol" />
+    <Reference Include="SDL2-CS" />
+    <Reference Include="NDesk.Options" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto" />
+    <Reference Include="CoherentUINET" />
+    <Reference Include="HytaleClient.Common" />
+    <Reference Include="AuthProtocol" />
+    <Reference Include="System.Xml">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Zlib" />
+    <Reference Include="Wwise-CS" />
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Utf8Json" />
+    <Reference Include="Sentry" />
+    <Reference Include="System.Net.WebSockets.Client.Managed" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/6.0.25/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Protocol" />
+  </ItemGroup>
+</Project>
